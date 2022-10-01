@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/svgs/enter.png">
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/global.css">
     <title>Login</title>
 </head>
 
@@ -14,21 +14,21 @@
     <main class="main">
         <header class="header">
             <nav class="nav_left">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Blog</a>
-                <a href="">Pages</a>
-                <a href="">Contact</a>
+                <a href="" class="link_header">Home</a>
+                <a href="" class="link_header">About</a>
+                <a href="" class="link_header">Blog</a>
+                <a href="" class="link_header">Pages</a>
+                <a href="" class="link_header">Contact</a>
             </nav>
             <div class="login_section">
                 <div class="change_language">
-                    <a href="">English</a>
+                    <a href="" class="link_header">English</a>
                 </div>
                 <div class="sign_in">
-                    <a href="">Sign in</a>
+                    <a href="" class="link_header">Sign in</a>
                 </div>
                 <div class="register">
-                    <a href="">Register</a>
+                    <a href="" class="link_header">Register</a>
                 </div>
             </div>
         </header>
@@ -42,30 +42,34 @@
                 <img src="./assets/svgs/Picture.png" alt="">
             </div>
             <form action="">
-                <div class="input_email">
-                    <input type="text" placeholder="Enter Email">
+                <div class="inputs email">
+                    <input type="text" placeholder="Enter Email" id="inputEmail">
                     <span class="icon_span">
                         <img src="./assets/svgs/icon_close.png" alt="">
                     </span>
                 </div>
-                <div class="input_passworld">
-                    <input type="password" name="" id="" placeholder="Senha">
+                <div class="inputs passworld">
+                    <input type="password" name="" id="inputPassword" placeholder="Senha">
                     <span class="icon_span">
-                        <img src="./assets/svgs/icon_view_password.png" alt="">
+                        <img src="./assets/svgs/icon_view_password.png" alt="" id="icon_view_passaword" onclick="viewPassword()">
                     </span>
                 </div>
                 <div class="continue_with">
-                    <a href="#" class="recover_passworld">Recover Password ?</a>
-                    <button class="btn_sign_in"><a href="#">Sign In</a></button>
+                    <div class="recover_pass">
+                        <a href="#" class="recover_password">Recover Password ?</a>
+                    </div>
+                    <button class="sign_in">
+                        <a href="#" class="btn_sign_in">Sign In</a>
+                    </button>
                     <span class="others_login">Or continue with</span>
                     <div class="buttons_login">
-                        <button>
+                        <button class="btn_others_login">
                             <a href=""><img src="./assets/svgs/Wrapper.png" alt=""> </a>
                         </button>
-                        <button>
+                        <button class="btn_others_login">
                             <a href=""><img src="./assets/svgs/Shape.png" alt=""> </a>
                         </button>
-                        <button>
+                        <button class="btn_others_login">
                             <a href=""><img src="./assets/svgs/Shape (1).png" alt=""> </a>
                         </button>
 
@@ -75,6 +79,7 @@
         </div>
         </div>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

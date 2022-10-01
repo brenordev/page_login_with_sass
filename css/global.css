@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+.header {
+  max-width: 1350px;
+  width: 100%;
+  height: 109px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.nav_left,
+.login_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+  font-weight: 500;
+}
+.nav_left .link_header:hover,
+.login_section .link_header:hover {
+  color: #4461F2;
+}
+.nav_left .sign_in,
+.login_section .sign_in {
+  height: 100%;
+  position: relative;
+}
+.nav_left .sign_in .link_header,
+.login_section .sign_in .link_header {
+  display: flex;
+  margin-bottom: 5px;
+}
+.nav_left .sign_in .link_header::before,
+.login_section .sign_in .link_header::before {
+  content: "";
+  width: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid #4461f2;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.nav_left .sign_in .link_header, .nav_left .register .link_header,
+.login_section .sign_in .link_header,
+.login_section .register .link_header {
+  color: #4461F2;
+}
+.nav_left .register,
+.login_section .register {
+  width: 112px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 21px;
+}
+
+.container {
+  max-width: 1350px;
+  width: 100%;
+  height: 75vh;
+  padding: 0 2%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .info_home h2 {
+  width: 100%;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+}
+.container .info_home span {
+  color: #000;
+}
+.container .info_home .link_register_info {
+  color: #4461F2;
+  font-weight: 700;
+  text-decoration: none;
+}
+.container .image_home {
+  width: 345px;
+  position: relative;
+  top: 85px;
+  right: 30px;
+}
+.container .image_home img {
+  width: 100%;
+}
+
+form {
+  max-width: 401px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.icon_span {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.continue_with {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.continue_with .recover_pass {
+  width: 100%;
+  text-align: right;
+}
+.continue_with .recover_pass .recover_password {
+  text-decoration: none;
+  color: #C7C7C7;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.continue_with .recover_pass .recover_password:hover {
+  text-decoration: underline;
+}
+.continue_with .sign_in {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  background: #4461F2;
+  box-shadow: 0px 12px 21px 5px rgba(68, 97, 242, 0.15);
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.continue_with .sign_in .btn_sign_in {
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 0.09em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.continue_with .others_login {
+  width: 100%;
+  padding: 20px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.09em;
+  color: #ACADAC;
+  text-align: center;
+  position: relative;
+}
+.continue_with .others_login::after {
+  content: "";
+  max-width: 30%;
+  width: 100%;
+  height: 0px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #DFDFDF;
+}
+.continue_with .others_login::before {
+  content: "";
+  max-width: 30%;
+  width: 100%;
+  height: 0px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #DFDFDF;
+}
+.continue_with .buttons_login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.continue_with .buttons_login .btn_others_login {
+  width: 107px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F6F6F6;
+  border: 1px solid #DDDFDD;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.continue_with .buttons_login .btn_others_login:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.13);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #F6F6F6;
+  overflow: hidden;
+  padding-bottom: 109px;
+}
+
+.link_header {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+span {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  color: #C7C7C7;
+}
+
+input {
+  max-width: 401px;
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  outline: none;
+  border: none;
+  background: #EAF0F7;
+  border-radius: 10px;
+}
+
+.button {
+  height: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .image_home {
+    display: none;
+  }
+}
+@media screen and (max-width: 870px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */
