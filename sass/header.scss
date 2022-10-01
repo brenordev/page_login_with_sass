@@ -44,6 +44,7 @@
     }
     .sign_in, .register {
         .link_header {
+            cursor: pointer;
             color: $blue;
         }
     }
