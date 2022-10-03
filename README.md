@@ -19,7 +19,7 @@ disponível em telas menores com responsividade.
 </div>
 
 ### Tarefa pendente
-- [X] Melhorias no código.
+- [ ] Melhorias no código.
 - [ ] Responsividade.
 - [ ] Mobile Menu.
 - [ ] Dark Mode.

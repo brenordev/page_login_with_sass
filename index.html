@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" href="./assets/svgs/enter.png">
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/output.css">
     <title>Login</title>
 </head>
 
@@ -22,9 +23,8 @@
                 <a href="" class="link_header">Contact</a>
             </nav>
             <div class="login_section">
-                
-                <button class="toggle_theme">
-                    <i class="fa-regular fa-moon">a</i>
+                <button class="toggle_theme" id="btnDarkMode">
+                    <i class="fa-regular fa-moon" id="icon"></i>
                 </button>
                 <div class="change_language">
                     <a href="" class="link_header">English</a>
@@ -40,7 +40,7 @@
         <div class="container">
             <div class="info_home">
                 <h2>Sign In to <br> Recharge Direct</h2>
-                <span>if you don’t an account <br> you can <a href="#" class="link_register_info">Register here!</a>
+                <span>if you don't an account <br> you can <a href="#" class="link_register_info">Register here!</a>
                 </span>
             </div>
             <div class="image_home">
@@ -66,7 +66,9 @@
                     <button class="sign_in">
                         <a href="#" class="btn_sign_in">Sign In</a>
                     </button>
-                    <span class="others_login">Or continue with</span>
+                    <div class="others_login">
+                        <span>Or continue with</span>
+                    </div>
                     <div class="buttons_login">
                         <button class="btn_others_login">
                             <a href=""><img src="./assets/svgs/Wrapper.png" alt=""> </a>
@@ -85,6 +87,8 @@
         </div>
     </main>
     <script src="./js/script.js"></script>
+    <script src="./js/darkMode.js"></script>
+    <script src="./js/scrollreveal.js"></script>
 </body>
 
 </html>
