@@ -19,9 +19,9 @@ disponível em telas menores com responsividade.
 </div>
 
 ### Tarefa pendente
-- [ ] Melhorias no código.
-- [ ] Responsividade.
+- [X] Melhorias no código.
+- [X] Responsividade.
+- [X] Dark Mode.
+- [X] Erro de input vazio.
 - [ ] Mobile Menu.
-- [ ] Dark Mode.
-- [ ] Botão visualizar senha.
-- [ ] Validação nos Inputs.
+- [ ] Visualizar Password.
