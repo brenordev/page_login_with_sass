@@ -7,13 +7,10 @@ btnLogin.addEventListener('click', (e) => {
     const email = inputEmail.value;
     const password = inputPassword.value;
     if (email === '') {
-        inputEmail.classList.toggle('errorInput');
-        console.log('Era o ; mesmo')
-
+        inputEmail.classList.add('errorInput');
     }
     if (password === '') {
-        inputPassword.classList.toggle('errorInput')
-        console.log('Senha vazio')
+        inputPassword.classList.add('errorInput')
     }
     if (email && password != '') {
         inputEmail.classList.remove('errorInput');

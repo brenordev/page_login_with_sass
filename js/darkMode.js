@@ -6,8 +6,6 @@ const link = document.querySelector('.link_header')
 
 buttonDarkMode.addEventListener('click', function(e) {
     body.classList.toggle('dark-mode-on');
-    console.log('Dark Mode ON');
-
     if (body.classList == 'dark-mode-on'){
         icon.classList.toggle('fa-moon');
         icon.classList.add('fa-sun');
