@@ -61,7 +61,7 @@ body {
   }
 }
 .main .header .login_section .sign_in .link_header {
-  color: #4461F2;
+  color: #4461F2 !important;
   position: relative;
 }
 .main .header .login_section .sign_in .link_header::after {
@@ -80,12 +80,12 @@ body {
   height: 30px;
   background-color: transparent;
   border-radius: 50px;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 .main .header .login_section .toggle_theme:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+  border: 2px solid #CCC;
 }
 .main .header .login_section .toggle_theme .fa-moon {
   color: #14162E;
@@ -101,7 +101,7 @@ body {
   border-radius: 21px;
 }
 .main .header .login_section .register .link_header {
-  color: #4461F2;
+  color: #4461F2 !important;
 }
 .main .container {
   width: 100%;
@@ -110,6 +110,29 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+}
+.main .container .elipses {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -5;
+}
+.main .container .elipses .elipse-1 {
+  width: 226px;
+  height: 226px;
+  background: #DDA82A;
+  opacity: 0.45;
+  filter: blur(158.5px);
+}
+.main .container .elipses .elipse-2 {
+  position: relative;
+  width: 206px;
+  height: 206px;
+  left: 150px;
+  top: 50px;
+  background: #4461F2;
+  filter: blur(158.5px);
 }
 .main .container .info_home {
   font-style: normal;
@@ -124,6 +147,10 @@ body {
 }
 .main .container .info_home span {
   font-weight: 500;
+  font-size: 15px;
+}
+.main .container .info_home span .link_register_info {
+  color: #4461F2;
   font-size: 15px;
 }
 .main .container .recover_pass {
@@ -190,6 +217,10 @@ body {
 .main form .inputs .errorInput::placeholder {
   color: #EB4335;
 }
+.main form .inputs .errorInput ion-icon {
+  color: #EB4335;
+  font-size: 22px;
+}
 .main form .inputs .icon_span {
   position: absolute;
   top: 50%;
@@ -199,6 +230,10 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.main form .inputs .icon_span ion-icon {
+  color: #667085;
+  font-size: 22px;
 }
 .main form .continue_with {
   display: flex;
@@ -238,6 +273,7 @@ body {
   background-color: #F6F6F6;
   position: relative;
   z-index: -2;
+  transition: all 0.5s ease;
 }
 .main form .continue_with .others_login::before {
   content: "";
@@ -288,6 +324,24 @@ body {
 .dark-mode-on {
   background-color: #14162E;
   color: #FFFFFF;
+}
+.dark-mode-on .sign_in {
+  color: #4461F2;
+}
+.dark-mode-on .info_home h2 {
+  color: #FFFFFF !important;
+}
+.dark-mode-on .info_home span {
+  color: #FFFFFF !important;
+}
+.dark-mode-on .link_header {
+  color: #FFFFFF !important;
+}
+.dark-mode-on .others_login {
+  transition: all 0.5s ease;
+}
+.dark-mode-on .others_login span {
+  background-color: #14162E !important;
 }
 
 .fa-sun {

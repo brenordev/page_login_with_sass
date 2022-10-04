@@ -68,7 +68,7 @@ body{
             .sign_in{
                 
                 .link_header{
-                    color: $blue;
+                    color: $blue !important;
                     position: relative;
 
                     &::after{
@@ -91,12 +91,12 @@ body{
                 height: 30px;
                 background-color: transparent;
                 border-radius: 50px;
-                border: none;
+                border: 2px solid transparent;
                 cursor: pointer;
                 transition: $transition-hover;
                 
                     &:hover{
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+                        border: 2px solid #CCC;
                     }
                 .fa-moon{
                     color: $bg-dark-blue;
@@ -115,7 +115,7 @@ body{
                 border-radius: 21px;
 
                 .link_header{
-                    color: $blue;
+                    color: $blue !important;
                 }
             }
         
@@ -128,8 +128,31 @@ body{
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        position: relative;
         
+        .elipses{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            z-index: -5;
 
+            .elipse-1{
+                width: 226px;
+                height: 226px;
+                background: #DDA82A;
+                opacity: 0.45;
+                filter: blur(158.5px);
+            }
+            .elipse-2{
+                position: relative;
+                width: 206px;
+                height: 206px;
+                left: 150px;
+                top: 50px;
+                background: #4461F2;
+                filter: blur(158.5px);
+            }
+        }
         .info_home{
             font-style: normal;
             color: $black;
@@ -144,6 +167,12 @@ body{
             span{
                 font-weight: 500;
                 font-size: 15px;    
+
+                .link_register_info{
+                    color: $blue;
+                    font-size: 15px
+                    
+                }
             }
         }
         .recover_pass{
@@ -216,6 +245,11 @@ body{
                 &::placeholder{
                     color: $input-error-color;
                 }
+
+                ion-icon{
+                    color: $input-error-color;
+                    font-size: 22px;
+                }
             }
             .icon_span{
                 position: absolute;
@@ -226,6 +260,11 @@ body{
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;   
+
+                ion-icon{
+                    color: $input-color;
+                    font-size: 22px;
+                }
             }
             
         }
@@ -268,6 +307,7 @@ body{
                         background-color: #F6F6F6;
                         position: relative;
                         z-index: -2;
+                        transition: $transition-hover;
                     }
                     &::before{
                         content: "";
@@ -325,6 +365,31 @@ body{
 .dark-mode-on{
     background-color: $bg-dark-blue;
     color: $white;
+
+
+
+    .sign_in{
+       color: $blue;
+    }
+    .info_home{
+        h2{
+            color: $white !important;
+        }
+
+        span{
+            color: $white !important;
+        }
+    }
+
+    .link_header{
+        color: $white !important;
+    }
+    .others_login{
+        transition: $transition-hover;
+        span{
+            background-color: $bg-dark-blue !important;
+        }
+    }
 }
 .fa-sun{
     color: #FF884B;
