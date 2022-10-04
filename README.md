@@ -23,5 +23,5 @@ disponível em telas menores com responsividade.
 - [X] Responsividade.
 - [X] Dark Mode.
 - [X] Erro de input vazio.
+- [X] Visualizar Password.
 - [ ] Mobile Menu.
-- [ ] Visualizar Password.
