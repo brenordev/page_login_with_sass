@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   background-color: #f6f6f6;
 }
 
@@ -44,7 +44,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.06em;
   color: #000000;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .main .header .link_header:hover {
   color: #4461F2;
@@ -82,7 +82,7 @@ body {
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .main .header .login_section .toggle_theme:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
@@ -165,25 +165,39 @@ body {
   padding-left: 20px;
   background-color: #EAF0F7;
   color: #667085;
-  font-size: 17px;
+  font-size: 15px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
 }
 .main form .inputs input::placeholder {
   color: #4F555A;
   font-style: normal;
   letter-spacing: 0.3px;
   font-size: 15px;
+  transition: all 0.5s ease;
+}
+.main form .inputs input:focus {
+  border: 1px solid #ACADAC;
+}
+.main form .inputs input:focus::placeholder {
+  opacity: 0.2;
+}
+.main form .inputs .errorInput {
+  background-color: #FFDED8;
+  border: 1px solid #EB4335;
+  color: #EB4335;
+}
+.main form .inputs .errorInput::placeholder {
+  color: #EB4335;
 }
 .main form .inputs .icon_span {
   position: absolute;
-  height: 100%;
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.main form .inputs .icon_span img {
-  position: relative;
-  right: 20px;
   cursor: pointer;
 }
 .main form .continue_with {
@@ -191,7 +205,7 @@ body {
   flex-direction: column;
   gap: 15px;
 }
-.main form .continue_with .sign_in {
+.main form .continue_with .btn_sign_in {
   width: 100%;
   height: 60px;
   border: none;
@@ -199,12 +213,13 @@ body {
   box-shadow: 0px 12px 21px 4px rgba(68, 97, 242, 0.15);
   border-radius: 10px;
   cursor: pointer;
-}
-.main form .continue_with .sign_in .btn_sign_in {
   color: #FFFFFF;
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.09em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main form .continue_with .others_login {
   display: flex;
@@ -262,7 +277,7 @@ body {
   border: 1px solid #DDDFDD;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .main form .continue_with .buttons_login .btn_others_login:hover {
   background: #FFFFFF;

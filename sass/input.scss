@@ -14,8 +14,7 @@ body{
     height: 100vh;
     overflow-x: hidden;
     transition: $transition-hover;
-    background-color: #f6f6f6;
-   
+    background-color: #f6f6f6;   
 }
 .main{
     max-width: 1300px;
@@ -97,7 +96,6 @@ body{
                 transition: $transition-hover;
                 
                     &:hover{
-                        // border: 1px solid $input-color;
                         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
                     }
                 .fa-moon{
@@ -190,29 +188,44 @@ body{
                 padding-left: 20px;
                 background-color: $bg-inputs;
                 color: $input-color;
-                font-size: 17px;
+                font-size: 15px;
+                border: 1px solid transparent;
+                transition: $transition-hover;
 
                 &::placeholder{
                     color: $placeholder-color;
                     font-style: normal;
                     letter-spacing: .3px;
                     font-size: 15px;
+                    transition: $transition-hover;
+                }
+
+                &:focus{
+                    border: 1px solid $gray-light;
+
+                    &::placeholder{
+                        opacity: .2;
+                    }
+                }                
+            }
+            .errorInput{
+                background-color: $bg-input-error;
+                border: 1px solid $input-error-color;
+                color: $input-error-color;
+            
+                &::placeholder{
+                    color: $input-error-color;
                 }
             }
-
             .icon_span{
                 position: absolute;
-                height: 100%;
-                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                img{
-                    position: relative;
-                    right: 20px;
-                    cursor: pointer;          
-                }
+                cursor: pointer;   
             }
             
         }
@@ -221,7 +234,7 @@ body{
             flex-direction: column;
             gap: 15px;
         
-            .sign_in{
+            .btn_sign_in{
                 width: 100%;
                 height: 60px;
                 border: none;
@@ -229,13 +242,13 @@ body{
                 box-shadow: 0px 12px 21px 4px rgba(68, 97, 242, 0.15);
                 border-radius: 10px;
                 cursor: pointer;
-        
-                .btn_sign_in{
-                    color: $white;
-                    font-size: 19px;
-                    font-weight: 700;
-                    letter-spacing: 0.09em;
-                }
+                color: $white;
+                font-size: 19px;
+                font-weight: 700;
+                letter-spacing: 0.09em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .others_login{
@@ -323,6 +336,7 @@ body{
         }
     }
 }
+
 @media screen and (max-width: 1224px){
     .image_home{
         display: none;

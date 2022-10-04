@@ -8,6 +8,7 @@ $gray: #C7C7C7;
 $gray-light: #ACADAC;
 $input-color: #667085;
 $placeholder-color: #4F555A;
+$input-error-color: #EB4335;
 
 // Background colors
 
@@ -15,10 +16,11 @@ $bg-white: #DFDFDF;
 $bg-dark-blue: #14162E;
 $bg-buttons: #F6F6F6;
 $bg-inputs: #EAF0F7;
+$bg-input-error: #FFDED8;
 
 // Font family
 $font-poppins: 'Poppins', sans-serif;
 
 // Hover animation time
 
-$transition-hover: all .3s ease;
+$transition-hover: all .5s ease;
