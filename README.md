@@ -18,10 +18,10 @@ disponível em telas menores com responsividade.
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </div>
 
-### Tarefa pendente
+### Tarefa pendentes
 - [X] Melhorias no código.
 - [X] Responsividade.
 - [X] Dark Mode.
 - [X] Erro de input vazio.
 - [X] Visualizar Password.
-- [ ] Mobile Menu.
+- [X] Mobile Menu.

@@ -8,6 +8,8 @@ togglePassword.addEventListener("click", function () {
     this.classList.toggle("fa-eye");
 
     
+
+    
 });
 
 
